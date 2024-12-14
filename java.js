@@ -15,6 +15,10 @@ for ( let i= 0; i<totalSquares; i++) {
     const square = document.createElement('div');
     square.classList.add('square');
     container.appendChild(square);
+    square.addEventListener('mouseenter', () => {
+        square.style.backgroundColor = 'black';
+    });
+    
 
 }
 
@@ -23,9 +27,3 @@ for ( let i= 0; i<totalSquares; i++) {
 
 
 
-square.addEventListener('mouseenter', () => {
-    square.style.backgroundColor = 'black';
-});
-square.addEventListener('mouseleave', () => {
-    square.style.backgroundColor = '';
-});
