@@ -3,6 +3,9 @@ body, html {
     padding: 0;
     height: 100%;
     box-sizing: border-box;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -11,17 +14,18 @@ body, html {
 .container {
     display: flex;
     flex-wrap: wrap; /* Allows items to wrap onto new rows */
-    width: 100vw; /* Total width of the grid */
-    height: 100vh; /* Total height of the grid */
+    width: 960px; /* Total width of the grid */
+    height: 960px; /* Total height of the grid */
     margin: 0; /* Centers the grid on the page */
+    padding:0;
     border: 2px solid black; /* Optional border for the container */
     box-sizing: border-box;
   }
   
   /* Square styles */
   .square {
-    flex: 0 0 calc(100% / 16); /* Ensures 16 squares per row */
-    height: calc(100vh / 16); /* Each square is 1/16 of the container height */
+    flex: 0 0 calc((960px - 4px) / 16); /* Ensures 16 squares per row */
+    height: calc( (960px - 4px) / 16); /* Each square is 1/16 of the container height */
     box-sizing: border-box; /* Includes borders in element size */
     border: 1px solid rgb(177, 174, 174); /* Optional border to see the grid lines */
   }
