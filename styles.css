@@ -1,0 +1,18 @@
+/* Container styles */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto new rows */
+    width: 640px; /* Total width of the grid */
+    height: 640px; /* Total height of the grid */
+    margin: 0 auto; /* Centers the grid on the page */
+    border: 2px solid black; /* Optional border for the container */
+  }
+  
+  /* Square styles */
+  .square {
+    flex: 0 0 calc(100% / 16); /* Ensures 16 squares per row */
+    height: calc(640px / 16); /* Each square is 1/16 of the container height */
+    box-sizing: border-box; /* Includes borders in element size */
+    border: 1px solid rgb(81, 78, 78); /* Optional border to see the grid lines */
+  }
+  
